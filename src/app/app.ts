@@ -5,8 +5,19 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   imports: [RouterOutlet],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
 export class App {
   protected readonly title = signal('angular-ekart');
+
+  count = 0;
+
+  helloWorld() {
+    console.log('inside hello world!');
+  }
+
+  handleClick() {
+    console.log('Button Clicked!');
+    this.helloWorld();
+  }
 }
