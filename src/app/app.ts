@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Effect } from './effect/effect';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Effect],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
@@ -20,4 +21,10 @@ export class App {
     console.log('Button Clicked!');
     this.helloWorld();
   }
+
+  submit(email: string) {
+    console.log(email);
+  }
+
+  isLoggedIn: boolean = true;
 }

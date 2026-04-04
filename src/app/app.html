@@ -1,8 +1,24 @@
-<main class="">
-  <div class="mx-auto text-center mt-20">
-    <h1>{{ count }}</h1>
+<main class="bg-gray-300 min-h-screen">
+  <div class="mx-auto text-center pt-20">
+    <!-- <h1>{{ count }}</h1>
 
     <button class="bg-amber-300 px-4 py-2 rounded-lg" (click)="handleClick()">Submit</button>
+
+    <div class="mt-10">
+      <input class="bg-white mr-4 p-3 rounded-xl" #emailInput type="text" />
+      <button class="border px-3 py-2 bg-emerald-400 rounded-xl" (click)="submit(emailInput.value)">
+        Submit
+      </button>
+      <p>Submitted Value: {{ emailInput.value }}</p>
+    </div>
+
+    @if (!isLoggedIn) {
+      <h4>Show Login Page</h4>
+    } @else {
+      <h3>Show register page</h3>
+    } -->
+
+    <app-effect></app-effect>
   </div>
 </main>
 
