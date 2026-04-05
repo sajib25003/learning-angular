@@ -2,10 +2,11 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Effect } from './effect/effect';
 import { CommonModule } from '@angular/common';
+import { ToDoApp } from './to-do-app/to-do-app';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CommonModule],
+  imports: [RouterOutlet, ToDoApp, CommonModule],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
