@@ -1,30 +1,36 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Effect } from './effect/effect';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Effect],
+  imports: [RouterOutlet, CommonModule],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
 export class App {
   protected readonly title = signal('angular-ekart');
 
-  count = 0;
+  lName = 'ashik';
+  uName = 'SAJIB';
 
-  helloWorld() {
-    console.log('inside hello world!');
-  }
+  today = new Date();
 
-  handleClick() {
-    console.log('Button Clicked!');
-    this.helloWorld();
-  }
+  // count = 0;
 
-  submit(email: string) {
-    console.log(email);
-  }
+  // helloWorld() {
+  //   console.log('inside hello world!');
+  // }
 
-  isLoggedIn: boolean = true;
+  // handleClick() {
+  //   console.log('Button Clicked!');
+  //   this.helloWorld();
+  // }
+
+  // submit(email: string) {
+  //   console.log(email);
+  // }
+
+  // isLoggedIn: boolean = true;
 }

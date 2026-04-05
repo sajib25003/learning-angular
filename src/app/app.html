@@ -1,5 +1,15 @@
 <main class="bg-gray-300 min-h-screen">
   <div class="mx-auto text-center pt-20">
+    <h1>{{ lName | uppercase }}</h1>
+    <h1>{{ uName | json }}</h1>
+
+    <p>Short Date: {{ today | date: 'short' }}</p>
+    <p>Full Date: {{ today | date: 'full' }}</p>
+    <p>Custom Date: {{ today | date: 'dd/MM/yyyy' }}</p>
+
+    <!-- <p>checking</p> -->
+    <p>checking 2</p>
+
     <!-- <h1>{{ count }}</h1>
 
     <button class="bg-amber-300 px-4 py-2 rounded-lg" (click)="handleClick()">Submit</button>
@@ -18,7 +28,7 @@
       <h3>Show register page</h3>
     } -->
 
-    <app-effect></app-effect>
+    <!-- <app-effect></app-effect> -->
   </div>
 </main>
 
