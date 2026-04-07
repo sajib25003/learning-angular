@@ -4,11 +4,12 @@ import { Component } from '@angular/core';
 // import { InputSignal } from './input-signal/input-signal';
 // import { CounterStore } from './core/store/counter';
 import { UserStore } from './core/store/user';
+import { Card } from './card/card';
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet, CommonModule, InputSignal],
-  imports: [],
+  imports: [Card],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
