@@ -1,9 +1,21 @@
+<app-header-component></app-header-component>
+
 <div class="px-10 flex items-center justify-between bg-orange-200 py-6">
   <h2 class="text-2xl font-bold text-green-700">Sonar Bangla</h2>
   <nav class="flex gap-2 items-center text-black">
-    <a class="text-black" routerLink="/">Home</a>
-    <a routerLink="/about">About</a>
-    <a routerLink="/contact">Contact</a>
+    <a
+      class="text-black"
+      routerLink="/"
+      routerLinkActive="border-b-2 rounded-b-lg px-1.5 border-b-blue-400"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Home</a
+    >
+    <a routerLink="/about" routerLinkActive="border-b-2 rounded-b-lg px-1.5 border-b-blue-400"
+      >About</a
+    >
+    <a routerLink="/contact" routerLinkActive="border-b-2 rounded-b-lg px-1.5 border-b-blue-400"
+      >Contact</a
+    >
   </nav>
 </div>
 
