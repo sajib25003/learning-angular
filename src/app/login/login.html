@@ -1,0 +1,56 @@
+<div class="min-h-screen bg-gray-100 flex items-center justify-center">
+  <div class="bg-white border border-gray-200 rounded-xl p-10 w-full max-w-sm">
+    <div class="text-center mb-7">
+      <div
+        class="w-11 h-11 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4"
+      >
+        <svg class="w-5 h-5 text-green-700" ...></svg>
+      </div>
+      <h2 class="text-lg font-medium">Welcome back</h2>
+      <p class="text-sm text-gray-500">Sign in to your account</p>
+    </div>
+
+    <div class="mb-4">
+      <label class="block text-sm text-gray-500 mb-1.5">Email address</label>
+      <input
+        type="email"
+        class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm outline-none focus:border-green-600"
+        placeholder="you@example.com"
+      />
+    </div>
+    <!-- <div class="mb-4">
+      <label class="block text-sm text-gray-500 mb-1.5">Email address</label>
+      <input type="email" 
+      [(ngModel)]="email"
+        class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm outline-none focus:border-green-600"
+        placeholder="you@example.com" />
+    </div> -->
+
+    <div class="mb-4">
+      <div class="flex justify-between mb-1.5">
+        <label class="text-sm text-gray-500">Password</label>
+        <a routerLink="/forgot" class="text-xs text-green-700">Forgot password?</a>
+      </div>
+      <input
+        type="password"
+        class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm outline-none focus:border-green-600"
+        placeholder="••••••••"
+      />
+      <!-- <input type="password" [(ngModel)]="password"
+        class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm outline-none focus:border-green-600"
+        placeholder="••••••••" /> -->
+    </div>
+
+    <button
+      (click)="Login()"
+      class="w-full bg-green-700 text-white rounded-lg py-2.5 text-sm font-medium hover:bg-green-800 transition-colors"
+    >
+      Sign in
+    </button>
+
+    <p class="text-center text-sm text-gray-500 mt-5">
+      Don't have an account?
+      <a routerLink="/register" class="text-green-700 font-medium">Sign up</a>
+    </p>
+  </div>
+</div>

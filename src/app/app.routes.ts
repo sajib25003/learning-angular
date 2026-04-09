@@ -1,11 +1,22 @@
 import { Routes } from '@angular/router';
 import { Home } from './home/home';
 import { About } from './about/about';
-import { Contact } from './contact/contact';
 import { CompanyProfile } from './about/company-profile/company-profile';
 import { OwnerProfile } from './about/owner-profile/owner-profile';
+import { Login } from './login/login';
+import { Dashboard } from './dashboard/dashboard';
+import { authGuard } from './auth-guard';
 
 export const routes: Routes = [
+  {
+    path: 'login',
+    component: Login,
+  },
+  {
+    path: 'dashboard',
+    component: Dashboard,
+    canActivate: [authGuard],
+  },
   {
     path: '',
     component: Home,
@@ -33,5 +44,10 @@ export const routes: Routes = [
     path: 'contact',
     // component: Contact,
     loadComponent: () => import('./contact/contact').then((m) => m.Contact),
+  },
+  //   Page not found should always be at last
+  {
+    path: '**',
+    loadComponent: () => import('./not-found-page/not-found-page').then((m) => m.NotFoundPage),
   },
 ];
