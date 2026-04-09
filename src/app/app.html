@@ -1,47 +1,10 @@
-<main class="bg-gray-200 min-h-screen mx-auto">
-  <div class="text-center mx-auto pt-10">
-    <app-card [title]="'Angular Course'" [description]="'Learning Angular for almost no hope!'">
-      <p>This is coming from App.html</p>
-      <button>Click Me!</button>
-    </app-card>
-    <!-- <h2 class="text-4xl font-bold text-green-800 mb-4">Application</h2>
-    @if (userStore.user()) {
-      <p>Welcome {{ userStore.user()?.name }}</p>
-      @if (userStore.isAdmin()) {
-        <p>Admin Access</p>
-      }
-      <button class="mr-4 rounded-lg bg-amber-500 px-5 py-2" (click)="userStore.logout()">
-        Logout
-      </button>
-    } @else {
-      <button
-        class="mr-4 rounded-lg bg-amber-500 px-5 py-2"
-        (click)="userStore.login('Ashik', 'admin')"
-      >
-        Login
-      </button>
-    } -->
-  </div>
-  <!-- <div class="text-center mx-auto pt-10">
-    <h2 class="text-4xl font-bold text-green-800 mb-4">Counter App</h2>
-    <p class="my-10">
-      Current Count:
-      <span class="text-2xl font-semibold text-red-600">{{ counterStore.count() }}</span>
-    </p>
+<div class="px-10 flex items-center justify-between bg-orange-200 py-6">
+  <h2 class="text-2xl font-bold text-green-700">Sonar Bangla</h2>
+  <nav class="flex gap-2 items-center text-black">
+    <a class="text-black" routerLink="/">Home</a>
+    <a routerLink="/about">About</a>
+    <a routerLink="/contact">Contact</a>
+  </nav>
+</div>
 
-    <button class="mr-4 rounded-lg bg-amber-500 px-5 py-2" (click)="counterStore.increment()">
-      +
-    </button>
-    <button class="mr-4 rounded-lg bg-amber-500 px-5 py-2" (click)="counterStore.decrement()">
-      -
-    </button>
-    <button class="mr-4 rounded-lg bg-amber-500 px-5 py-2" (click)="counterStore.reset()">
-      reset
-    </button>
-  </div> -->
-
-  <!-- <app-input-signal [name]="username"></app-input-signal> -->
-  <!-- <app-to-do-app></app-to-do-app> -->
-</main>
-
-<!-- <router-outlet /> -->
+<router-outlet />

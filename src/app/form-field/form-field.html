@@ -1,0 +1,8 @@
+<div class="flex gap-3 justify-center items-center">
+  <label>{{ label() }}</label>
+  <input
+    class="border px-3 py-2 bg-blue-200"
+    [type]="type()"
+    (input)="onInput($event.target.value)"
+  />
+</div>
