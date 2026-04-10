@@ -6,6 +6,8 @@ import { OwnerProfile } from './about/owner-profile/owner-profile';
 import { Login } from './login/login';
 import { Dashboard } from './dashboard/dashboard';
 import { authGuard } from './auth-guard';
+import { Product } from './product/product';
+import { Users } from './users/users';
 
 export const routes: Routes = [
   {
@@ -20,6 +22,14 @@ export const routes: Routes = [
   {
     path: '',
     component: Home,
+  },
+  {
+    path: 'product/:id',
+    component: Product,
+  },
+  {
+    path: 'users',
+    component: Users,
   },
   {
     path: 'about',
