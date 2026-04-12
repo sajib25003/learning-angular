@@ -1,8 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
 export interface IUser {
-  id: number;
+  id?: number;
   name: string;
   email: string;
 }
@@ -15,7 +16,11 @@ export class UserService {
 
   constructor(private http: HttpClient) {}
 
-  getUsers() {
+  createUser(user: IUser): Observable<IUser> {
+    return this.http.post<IUser>(this.apiUrl, user);
+  }
+
+  getUsers(): Observable<IUser[]> {
     return this.http.get<IUser[]>(this.apiUrl);
   }
 }
