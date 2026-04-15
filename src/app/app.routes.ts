@@ -55,6 +55,11 @@ export const routes: Routes = [
     // component: Contact,
     loadComponent: () => import('./contact/contact').then((m) => m.Contact),
   },
+  {
+    path: 'counter',
+    // component: Contact,
+    loadComponent: () => import('./counter-app/counter-app').then((m) => m.CounterApp),
+  },
   //   Page not found should always be at last
   {
     path: '**',
