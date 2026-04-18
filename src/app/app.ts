@@ -7,6 +7,7 @@ import {
   RouterOutlet,
 } from '@angular/router';
 import { HeaderComponent } from './header-component/header-component';
+import { Store } from '@ngrx/store';
 
 @Component({
   selector: 'app-root',
@@ -14,4 +15,6 @@ import { HeaderComponent } from './header-component/header-component';
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
-export class App {}
+export class App {
+  constructor(private store: Store) {}
+}

@@ -1,1 +1,11 @@
-<h2>NgRx Counter App</h2>
+<div class="m-10">
+  <h2 class="text-3xl mb-6">NgRx Counter App</h2>
+
+  <h2 class="text-3xl font-bold mb-6">Counter: {{ counter$ | async }}</h2>
+
+  <div class="flex items-center gap-3">
+    <button (click)="increment()" class="px-3 min-w-8 py-2 rounded-lg bg-emerald-500">+</button>
+    <button (click)="decrement()" class="px-3 min-w-8 py-2 rounded-lg bg-emerald-500">-</button>
+    <button (click)="reset()" class="px-3 py-2 rounded-lg bg-emerald-500">Reset</button>
+  </div>
+</div>
