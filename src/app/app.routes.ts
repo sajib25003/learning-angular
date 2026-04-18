@@ -8,6 +8,7 @@ import { Dashboard } from './dashboard/dashboard';
 import { authGuard } from './auth-guard';
 import { Product } from './product/product';
 import { Users } from './users/users';
+import { FormComponent } from './form-component/form-component';
 
 export const routes: Routes = [
   {
@@ -22,6 +23,10 @@ export const routes: Routes = [
   {
     path: '',
     component: Home,
+  },
+  {
+    path: 'ngrx-form',
+    component: FormComponent,
   },
   {
     path: 'product/:id',
